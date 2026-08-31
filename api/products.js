@@ -3,7 +3,7 @@ const PRODUCTS = {
     name: 'Gayo Arabika',
     origin: 'Aceh, 1.200 mdpl',
     note: 'Karamel, jeruk sitrun, akhir yang bersih',
-    price: 85000,
+    price: 500,
   },
   'toraja-arabika': {
     name: 'Toraja Arabika',
