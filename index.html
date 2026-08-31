@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kopi Nusantara — Kopi Single Origin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <span class="wordmark">Kopi Nusantara</span>
+  <button class="cart-toggle" id="cartToggle" aria-label="Buka keranjang">
+    Keranjang <span class="cart-count" id="cartCount">0</span>
+  </button>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Satu biji, satu daerah, satu cerita.</h1>
+    <p class="hero-sub">Kami menyangrai kecil-kecilan langsung dari empat dataran tinggi di Indonesia — tanpa campuran, tanpa nama samaran. Yang kamu minum adalah tempat ia tumbuh.</p>
+    <a href="#katalog" class="btn-primary">Lihat pilihan roast</a>
+  </div>
+  <aside class="hero-panel">
+    <h2>Musim panen ini</h2>
+    <dl>
+      <div class="panel-row"><dt>Wilayah</dt><dd>Aceh, Toraja, Flores, Sumatera Utara</dd></div>
+      <div class="panel-row"><dt>Proses</dt><dd>Giling basah &amp; full wash</dd></div>
+      <div class="panel-row"><dt>Ketinggian</dt><dd>1.100–1.500 mdpl</dd></div>
+      <div class="panel-row"><dt>Roast level</dt><dd>Medium, untuk filter &amp; espresso</dd></div>
+    </dl>
+  </aside>
+</section>
+
+<section class="catalog" id="katalog">
+  <h2>Pilihan roast</h2>
+  <div id="productList" class="product-list">
+    <!-- Produk dirender oleh JS -->
+  </div>
+</section>
+
+<footer class="site-footer">
+  <p>Pembayaran diproses aman melalui Midtrans. Ini adalah demo sandbox — tidak ada transaksi nyata.</p>
+</footer>
+
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="cart-header">
+    <h2>Keranjang</h2>
+    <button class="cart-close" id="cartClose" aria-label="Tutup keranjang">Tutup</button>
+  </div>
+  <div id="cartItems" class="cart-items">
+    <p class="cart-empty">Keranjang masih kosong.</p>
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total-row">
+      <span>Total</span>
+      <span id="cartTotal">Rp 0</span>
+    </div>
+
+    <form id="customerForm" class="customer-form">
+      <label>Nama <input type="text" id="custName" placeholder="Nama lengkap" required /></label>
+      <label>Email <input type="email" id="custEmail" placeholder="email@contoh.com" required /></label>
+      <label>No. HP <input type="tel" id="custPhone" placeholder="08123456789" required /></label>
+      <button type="submit" class="btn-primary btn-checkout" id="checkoutBtn">Bayar dengan Midtrans</button>
+    </form>
+    <p id="checkoutStatus" class="checkout-status"></p>
+  </div>
+</aside>
+
+<script src="/js/script.js"></script>
+</body>
+</html>
